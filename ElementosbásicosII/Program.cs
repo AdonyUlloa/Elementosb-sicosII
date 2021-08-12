@@ -27,6 +27,7 @@ namespace ElementosbásicosII
 
 
             int[] numbers = new int[10];
+            int sumatoria=0;  //almacena los datos de sumatoria
 
             /*numbers[0] = 5;
             numbers[1] = 10;
@@ -63,6 +64,11 @@ namespace ElementosbásicosII
             for (int j=0; j <  numbers.Length; j++)
             {
                 Console.WriteLine("Posicion {0} : {1}", j, numbers[j]);
+
+                //sumar los valores dentro del array
+                //samatoria = 
+                sumatoria = sumatoria + numbers[j];
+                //Console.WriteLine(sumatoria);
             }
 
             Console.WriteLine("IMPRIMIR ELEMENTOS CON FOREACH - ARREGLO  INVERTIDO");
@@ -73,7 +79,7 @@ namespace ElementosbásicosII
             }
 
 
-            //Console.WriteLine("EL VALOR PROMEDIO es IGUAL ")
+            Console.WriteLine("EL VALOR PROMEDIO es IGUAL {0} ", sumatoria/(numbers.Length));
 
         }
     }
