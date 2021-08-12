@@ -57,13 +57,16 @@ namespace ElementosbásicosII
                 inc++;
             } while (inc < numbers.Length);
 
-            Console.WriteLine("IMPRIME ELEMENTOS CON FOR" );
+            Console.WriteLine("IMPRIME ELEMENTOS CON FOR  - ARREGLO  ORDENADO" );
+            //llamada a la  clase  Array  y al metodo sort
+            Array.Sort(numbers); //el metodo sort permite  ordenar  los valores  dentro  de un array
             for (int j=0; j <  numbers.Length; j++)
             {
                 Console.WriteLine("Posicion {0} : {1}", j, numbers[j]);
             }
 
-            Console.WriteLine("IMPRIMIR ELEMENTOS CON FOREACH");
+            Console.WriteLine("IMPRIMIR ELEMENTOS CON FOREACH - ARREGLO  INVERTIDO");
+            Array.Reverse(numbers); //reverse pemite invertir  los valores dentro de un array
             foreach (int iteam in numbers)
             {
                 Console.WriteLine(iteam);
