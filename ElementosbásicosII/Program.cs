@@ -55,7 +55,7 @@ namespace ElementosbásicosII
             {
                 Console.WriteLine(numbers[inc]);
                 inc++;
-            } while (10 < numbers.Length);
+            } while (inc < numbers.Length);
 
             Console.WriteLine("IMPRIME ELEMENTOS CON FOR" );
             for (int j=0; j <  numbers.Length; j++)
