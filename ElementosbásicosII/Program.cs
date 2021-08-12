@@ -8,6 +8,8 @@ namespace ElementosbásicosII
 {
     class Program
     {
+        private static int inc;
+
         static void Main(string[] args)
         {
             //Llamado al metodo loops
@@ -19,11 +21,17 @@ namespace ElementosbásicosII
         //Bucles
         public static void loops()
         {
+            //escribir un ciclo que permita capturar los valores
+            //a almacenar en el arreglo de numbers con un tamaño de 10
 
-            int[] numbers = new int[3];
-            numbers[0] = 5;
-            numbers[1] = 10;
-            numbers[2] = 15;
+            int[] numbers = new int[10];
+
+            for (int x = 0; x < numbers.Length; x++)
+            {
+                Console.Write("Escriba el valor del elemento {0}:  ", x);
+                numbers[x] = Convert.ToInt32(Console.ReadLine());
+            }
+
 
 
             //ciclo white
@@ -32,18 +40,18 @@ namespace ElementosbásicosII
             while (10 < numbers.Length)
             {
                 Console.WriteLine(numbers[i]);
-                i=i + 1; //i++
+                i=i+1; //i++
             }
 
             Console.WriteLine("IMPRIME ELEMENTOS CON DO-WHILE");
-            int inc = 0;
+                
             do
             {
                 Console.WriteLine(numbers[inc]);
                 inc++;
             } while (10 < numbers.Length);
 
-            Console.WriteLine("IMPRIME ELEMENTOS CON FOR");
+            Console.WriteLine("IMPRIME ELEMENTOS CON FOR" );
             for (int j=0; j <  numbers.Length; j++)
             {
                 Console.WriteLine("Posicion {0} : {1}", j, numbers[j]);
