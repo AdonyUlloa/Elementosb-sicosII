@@ -23,8 +23,14 @@ namespace ElementosbásicosII
         {
             //escribir un ciclo que permita capturar los valores
             //a almacenar en el arreglo de numbers con un tamaño de 10
+            //2 - Calcular el promedio de los numeros almacenados en un array
+
 
             int[] numbers = new int[10];
+
+            /*numbers[0] = 5;
+            numbers[1] = 10;
+            numbers[2] = 15;*/
 
             for (int x = 0; x < numbers.Length; x++)
             {
@@ -37,14 +43,14 @@ namespace ElementosbásicosII
             //ciclo white
             int i = 0;
             Console.WriteLine("IMPRIMIR ELEMENTOS CON WHITE");
-            while (10 < numbers.Length)
+            while (i < numbers.Length)
             {
                 Console.WriteLine(numbers[i]);
                 i=i+1; //i++
             }
 
             Console.WriteLine("IMPRIME ELEMENTOS CON DO-WHILE");
-                
+            int inc = 0;  
             do
             {
                 Console.WriteLine(numbers[inc]);
@@ -64,6 +70,7 @@ namespace ElementosbásicosII
             }
 
 
+            //Console.WriteLine("EL VALOR PROMEDIO es IGUAL ")
 
         }
     }
