@@ -26,6 +26,7 @@ namespace ElementosbásicosII
             Students.Add("Carmen Valladares", 20);
 
 
+
             //leer el dicionario y mostrar los datos
             foreach (KeyValuePair<string, string> empleyee in EmployeeList)
             {
@@ -45,6 +46,29 @@ namespace ElementosbásicosII
 
             //Contar elementos de un dicionario
             Console.WriteLine("Elementos en el diccionario: {0}", EmployeeList.Count);
+
+            //Crear un diccionario  con los datos de 4 familiares, almacenar el nombre y edad,
+            //incluye sus datos a imprimir los datos del dicionario ordenado
+
+            Dictionary<string, int> familiares = new Dictionary<string, int>();
+            familiares.Add("Edwin Adony Ulloa Diaz", 24);
+            familiares.Add("Jimmy Aldair Ulloa Diaz", 22);
+            familiares.Add("Joselin Estefany Ulloa Diaz", 27);
+            familiares.Add("Estela de la Paz Diaz de Ulloa", 45);
+
+            foreach (KeyValuePair<string, int> familia in familiares)
+            {
+                Console.WriteLine("Clave: {0}, Valor:{1}", familia.Key, familia, familia.Value);
+            }
+
+            var dic2 = familiares.Keys.ToList();
+            dic2.Sort();
+
+            Console.WriteLine("Diccionario ordenado");
+            foreach (var item in dic2)
+            {
+                Console.WriteLine("{0}: {1}", item, familiares[item]);
+            }
 
             Console.ReadKey();
         }
