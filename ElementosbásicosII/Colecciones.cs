@@ -58,7 +58,7 @@ namespace ElementosbásicosII
 
             foreach (KeyValuePair<string, int> familia in familiares)
             {
-                Console.WriteLine("Clave: {0}, Valor:{1}", familia.Key, familia, familia.Value);
+                Console.WriteLine("Clave: {0}, Valor:{1}", familia.Key, familia.Value);
             }
 
             var dic2 = familiares.Keys.ToList();
