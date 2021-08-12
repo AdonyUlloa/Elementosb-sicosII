@@ -32,6 +32,17 @@ namespace ElementosbásicosII
                 Console.WriteLine("Clave: {0},  Valor: {1}", empleyee.Key, empleyee, empleyee.Value);
             }
 
+
+            //ordenar elementos del diccionario
+            var dic = EmployeeList.Keys.ToList();
+            dic.Sort();
+
+            Console.WriteLine("Diccionario ordenado");
+            foreach (var item in dic)
+            {
+                Console.WriteLine("{0}: {1}", item, EmployeeList[item]);
+            }
+
             //Contar elementos de un dicionario
             Console.WriteLine("Elementos en el diccionario: {0}", EmployeeList.Count);
 
